@@ -7,11 +7,13 @@
 
 
 /* phone */
+
+img{
+width:100px;
+}
 body {
   background-color: black;
 }
-
-
 a{
   color:gold; 
 }
@@ -20,8 +22,30 @@ h1 {
   color:gold;
 }
 
-
-
+@media screen and (max-width: 600px) {
+  .topImg{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+   }
+   .links{
+     
+     display:flex;
+     align-items: center;
+     flex-direction: column;
+   
+   }
+   a:hover { color: #00FF00; }
+   .h{
+     display:flex;
+     justify-content: space-evenly;
+   li {
+    color: white;
+   }
+   }
+  }
 /* computer */
 @media screen and (min-width: 600px) {
   .topImg{
@@ -32,6 +56,9 @@ h1 {
     
    
    }
+   a:hover {
+     color: #00FF00; 
+    }
    .links{
      
      display:flex;
@@ -43,7 +70,12 @@ h1 {
      justify-content: space-evenly;
    
    }
-
+   li {
+    color: white;
+   }
+   h2 {
+    color: white;
+   }
 
 }
 
